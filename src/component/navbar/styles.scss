@@ -1,0 +1,232 @@
+// .navbar {
+//   background-color: var(--yellow-theme-nav-background-color);
+//   height: 80px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 1.2rem;
+
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: inherit;
+//     padding: 0px 20px;
+//     flex: 1;
+
+//     &__logo {
+//       color: var(--yellow-theme-main-color);
+//       cursor: pointer;
+//     }
+
+//     &__menu {
+//       display: flex;
+//       list-style: none;
+//       text-align: center;
+
+//       &__item {
+//         line-height: 40px;
+//         margin-right: 1.5rem;
+//         font-size: 1.6rem;
+
+//         &::after {
+//           content: " ";
+//           display: block;
+//           height: 3px;
+//           width: 0;
+//           background: transparent;
+//           transition: 0.5s ease;
+//         }
+
+//         &:hover::after {
+//           width: 100%;
+//           background: var(--yellow-theme-main-color);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .nav-icon {
+//   display: none;
+// }
+
+//2nd scss
+// .navbar {
+//     background-color: #333;
+//     height: 80px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0 20px;
+//     position: relative;
+//     z-index: 1000; /* Ensure navbar is above other elements */
+//   }
+
+//   .navbar__container {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .navbar__container__logo {
+//     color: #fff;
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .navbar__container__menu {
+//     list-style: none;
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .navbar__container__menu_item {
+//     margin-left: 20px;
+//   }
+
+//   .navbar__container__menu__item__links {
+//     color: #fff;
+//     text-decoration: none;
+//   }
+
+//   .nav-icon {
+//     display: none;
+//     color: #fff;
+//     cursor: pointer;
+//   }
+
+//   /* Media Query for Mobile */
+//   @media screen and (max-width: 768px) {
+//     .navbar__container__menu {
+//       display: none;
+//       position: absolute;
+//       top: 80px;
+//       left: 0;
+//       width: 100%;
+//       background-color: #333;
+//       flex-direction: column;
+//       padding: 10px 0;
+//     }
+
+//     .navbar__container__menu_item {
+//       margin: 10px 0;
+//     }
+
+//     .nav-icon {
+//       display: block;
+//     }
+//   }
+
+//3rd scss
+
+.navbar {
+  background-color: #333; /* Initial background color */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1000; /* Ensure navbar is above other elements */
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color */
+  position: sticky;
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.navbar__container__logo {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem; /* Medium font size */
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.navbar__container__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    &.active {
+      background: #181818;
+      left: 0px;
+      opacity: 0;
+    }
+    &__item {
+      border-bottom: 1px solid #282828;
+      margin: 0px;
+      padding: 20px 0px;
+    }
+  }
+}
+
+.navbar__container__menu_item {
+  margin-left: 20px;
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.navbar__container__menu__item__links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Medium font size */
+  transition: color 0.3s ease; /* Smooth transition effect for color */
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem; /* Medium font size */
+  }
+}
+
+.navbar__container__menu__item__links:hover {
+  color: lightgray; /* Change color on hover */
+}
+
+.nav-icon {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &__links {
+    color: var(--yellow-theme-main-color);
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+}
