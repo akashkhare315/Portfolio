@@ -3,6 +3,7 @@ import About from "../About";
 import Projects from "../Projects";
 import Contact from "../Contact";
 import { Route, Routes } from "react-router-dom";
+import Hero from "../Hero";
 
 const NavRoute = () => {
   return (
@@ -10,6 +11,7 @@ const NavRoute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/hero" element={<Hero />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

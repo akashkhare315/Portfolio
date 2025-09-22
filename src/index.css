@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica Neue"; /* Or 'Helvetica' */
+  src: local("Helvetica Neue"), local("Helvetica"); /* Define local sources */
+  /* Add more src formats if you have font files (e.g., url('path/to/helvetica.ttf') format('truetype')) */
+  font-weight: normal;
+  font-style: normal;
+}
