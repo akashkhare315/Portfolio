@@ -26,26 +26,24 @@
 // };
 
 // export default About;
+
 import React from "react";
 import logo from "../assets/about-img.avif";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-gray-100 to-gray-50 flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 md:py-16">
+    <div className="min-h-screen w-full bg-gradient-to-b from-gray-100 to-gray-50 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 px-6 md:px-20 py-12 md:py-16">
       {/* Left side - heading & image */}
       <div className="flex flex-col items-center md:items-start">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left relative text-red-700">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left relative text-gray-700">
           About Me
-          {/* Optional divider line */}
           <span className="block w-20 h-1 bg-red-500 mt-2 rounded"></span>
         </h2>
 
-        {/* Image */}
         <img
           src={logo}
           alt="Profile"
-          className="w-48 h-64 md:w-64 md:h-80 object-cover rounded-xl shadow-lg ring-4 ring-white hover:scale-105 transition-transform"
+          className="w-48 h-64 md:w-64 md:h-80 lg:w-72 lg:h-80 object-cover rounded-xl shadow-lg ring-4 ring-white hover:scale-105 transition-transform"
         />
       </div>
 

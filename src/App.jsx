@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 
 import NavRoute from "./components/Routes/NavRoute";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavRoute />
       <Hero />
       <About />
+      <Contact />
     </div>
   );
 }
