@@ -8,9 +8,9 @@
 
 .contact-title h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
-  color: #ff4d4d;
+  color: white;
 }
 
 .divider {
@@ -79,7 +79,7 @@
 }
 
 .contact-form button {
-  background: #ff4d4d;
+  background: grey;
   color: #fff;
   padding: 12px;
   border: none;

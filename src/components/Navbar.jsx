@@ -16,9 +16,9 @@ const Navbar = () => {
       <NavLink to="/contact" className="hover:text-blue-400">
         Contact
       </NavLink>
-      <NavLink to="/hero" className="hover:text-blue-400">
+      {/* <NavLink to="/hero" className="hover:text-blue-400">
         Hero
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 };

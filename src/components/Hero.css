@@ -1,0 +1,37 @@
+/* Hero.css */
+
+/* Gradient background animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Classes specific to Hero */
+.hero-gradient {
+  background: linear-gradient(270deg, #34d399, #3b82f6, #9333ea);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+.hero-blink {
+  animation: blink 1s step-end infinite;
+}

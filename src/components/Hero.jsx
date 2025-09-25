@@ -52,24 +52,27 @@
 
 // export default Hero;
 
+// import React from "react";
+// import logo from "../assets/logo2.avif";
+
 import React from "react";
 import logo from "../assets/logo2.avif";
+import "./Hero.css"; // <-- import the CSS file
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-green-400 to-blue-500 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center gap-10">
+    <div className="w-full min-h-screen hero-gradient px-6 md:px-20 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
       {/* Left side - text */}
       <div className="flex flex-col space-y-4 text-center md:text-left">
         <p className="text-3xl md:text-4xl font-semibold leading-tight text-white">
           Hello,
         </p>
         <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white">
-          I'm Akash Khare
+          I'm Akash Khare <span className="hero-blink">|</span>
         </h1>
         <p className="text-2xl md:text-3xl font-semibold text-red-200 leading-relaxed">
           MERN Stack Developer
         </p>
-        {/* Optional CTA button */}
         <button className="mt-6 px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-200 transition">
           View My Work
         </button>
@@ -80,7 +83,7 @@ const Hero = () => {
         <img
           src={logo}
           alt="Profile"
-          className="w-48 h-48 md:w-72 md:h-72 object-cover rounded-full shadow-lg ring-4 ring-white"
+          className="w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-full shadow-lg ring-4 ring-white hover:scale-105 transition-transform"
         />
       </div>
     </div>

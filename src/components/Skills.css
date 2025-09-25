@@ -1,0 +1,13 @@
+@keyframes neonPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px #9333ea, 0 0 20px #9333ea, 0 0 30px #9333ea;
+  }
+  50% {
+    box-shadow: 0 0 20px #ec4899, 0 0 40px #ec4899, 0 0 60px #ec4899;
+  }
+}
+
+.hover\:shadow-neon:hover {
+  animation: neonPulse 1.5s infinite alternate;
+}
